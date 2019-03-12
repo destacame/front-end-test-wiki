@@ -17,7 +17,7 @@ A continuación encontrarás la documentación del backend para desarrollar la p
 
 ## Las urls:
 
-[URL_BASE] = http://ec2-18-231-137-134.sa-east-1.compute.amazonaws.com:8080
+[URL_BASE] = http://ec2-18-231-131-247.sa-east-1.compute.amazonaws.com:8080
 
 | Name | HTTP request method | Action | Url |
 | --- | --- | --- | --- |
