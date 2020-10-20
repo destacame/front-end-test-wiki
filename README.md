@@ -2,14 +2,14 @@
 
 A continuación encontrarás la documentación del backend para desarrollar la prueba técnica.
 
-## Para utilizar los post es necesario siempre enviar:
+## Es necesario agregar en el HEADER el Token para poder acceder:
+Es necesario agregar "Token " al principio y despues colocar el token...
 ```
-    {
-        "user": "ejemploAdmin",
-        "pass": "destacado"
-    }
+    HEADER
+    Authorization Token <aquí va tu token>
 ```
-> La API recibe json como request.
+
+> La API recibe *JSON* como request.
 
 > En caso de que el post necesite más parametros, agregadlos al diccionario o json.
 
@@ -17,37 +17,37 @@ A continuación encontrarás la documentación del backend para desarrollar la p
 
 ## Las urls:
 
-[URL_BASE] = http://ec2-18-228-17-151.sa-east-1.compute.amazonaws.com/
+[URL_BASE] = http://ec2-18-231-131-247.sa-east-1.compute.amazonaws.com
 
 | Name | HTTP request method | Action | Url |
 | --- | --- | --- | --- |
-| Chofer | POST | Select All | [URL_BASE]/chofer/all |
-| Chofer | POST | Select  | [URL_BASE]/chofer/\<id> |
+| Chofer | GET | Select All | [URL_BASE]/chofer/all |
+| Chofer | GET | Select  | [URL_BASE]/chofer/\<id> |
 | Chofer | POST | Insert   | [URL_BASE]/chofer |
 | Chofer | PUT | Update  | [URL_BASE]/chofer/\<id> |
 | Chofer | DELETE | Delete  | [URL_BASE]/chofer/\<id> |
-| Asiento | POST | Select All | [URL_BASE]/asiento/all |
-| Asiento | POST | Select  | [URL_BASE]/asiento/\<id> |
+| Asiento | GET | Select All | [URL_BASE]/asiento/all |
+| Asiento | GET | Select  | [URL_BASE]/asiento/\<id> |
 | Asiento | POST | Insert   | [URL_BASE]/asiento |
 | Asiento | PUT | Update  | [URL_BASE]/asiento/\<id> |
 | Asiento | DELETE | Delete  | [URL_BASE]/asiento/\<id> |
-| Pasajero | POST | Select All | [URL_BASE]/pasajero/all |
-| Pasajero | POST | Select  | [URL_BASE]/pasajero/\<id> |
+| Pasajero | GET | Select All | [URL_BASE]/pasajero/all |
+| Pasajero | GET | Select  | [URL_BASE]/pasajero/\<id> |
 | Pasajero | POST | Insert   | [URL_BASE]/pasajero |
 | Pasajero | PUT | Update  | [URL_BASE]/pasajero/\<id> |
 | Pasajero | DELETE | Delete  | [URL_BASE]/pasajero/\<id> |
-| Horario | POST | Select All | [URL_BASE]/horario/all |
-| Horario | POST | Select  | [URL_BASE]/horario/\<id> |
+| Horario | GET | Select All | [URL_BASE]/horario/all |
+| Horario | GET | Select  | [URL_BASE]/horario/\<id> |
 | Horario | POST | Insert   | [URL_BASE]/horario |
 | Horario | PUT | Update  | [URL_BASE]/horario/\<id> |
 | Horario | DELETE | Delete  | [URL_BASE]/horario/\<id> |
-| Trayecto | POST | Select All | [URL_BASE]/trayecto/all |
-| Trayecto | POST | Select  | [URL_BASE]/trayecto/\<id> |
+| Trayecto | GET | Select All | [URL_BASE]/trayecto/all |
+| Trayecto | GET | Select  | [URL_BASE]/trayecto/\<id> |
 | Trayecto | POST | Insert   | [URL_BASE]/trayecto |
 | Trayecto | PUT | Update  | [URL_BASE]/trayecto/\<id> |
 | Trayecto | DELETE | Delete  | [URL_BASE]/trayecto/\<id> |
-| Bus | POST | Select All | [URL_BASE]/bus/all |
-| Bus | POST | Select  | [URL_BASE]/bus/\<id> |
+| Bus | GET | Select All | [URL_BASE]/bus/all |
+| Bus | GET | Select  | [URL_BASE]/bus/\<id> |
 | Bus | POST | Insert   | [URL_BASE]/bus |
 | Bus | PUT | Update  | [URL_BASE]/bus/\<id> |
 | Bus | DELETE | Delete  | [URL_BASE]/bus/\<id> |
@@ -71,24 +71,19 @@ A continuación encontrarás la documentación del backend para desarrollar la p
 ### Select All
 URL = [URL_BASE]/chofer/all
 
-METHOD = POST
+METHOD = GET
 ```
-    {
-        "user": "ejemploAdmin",
-        "pass": "destacado"
-    }
+    {}
 ```
 
 ### Update
-URL = [URL_BASE]/chofer/2
+URL = [URL_BASE]/chofer/1
 
 METHOD = PUT
 ```
     {
-        "user": "ejemploAdmin",
-        "pass": "destacado",
-        "nombre": "Jose",
-        "apellido": "Angel",
-        "rut": "17467125-1"
+        "nombre": "Josue",
+        "apellido": "Angelo",
+        "rut": "17467125-2"
     }
 ```
