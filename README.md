@@ -17,7 +17,7 @@ Es necesario agregar "Token " al principio y despues colocar el token...
 
 ## Las urls:
 
-[URL_BASE] = http://ec2-18-231-131-247.sa-east-1.compute.amazonaws.com
+[URL_BASE] = testing.destacame.cl
 
 | Name | HTTP request method | Action | Url |
 | --- | --- | --- | --- |
